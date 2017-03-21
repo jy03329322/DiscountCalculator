@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		144AC79D1E7F94E700AB4632 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144AC79C1E7F94E700AB4632 /* AppDelegate.swift */; };
-		144AC79F1E7F94E700AB4632 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144AC79E1E7F94E700AB4632 /* ViewController.swift */; };
 		144AC7A21E7F94E700AB4632 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 144AC7A01E7F94E700AB4632 /* Main.storyboard */; };
 		144AC7A41E7F94E700AB4632 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 144AC7A31E7F94E700AB4632 /* Assets.xcassets */; };
 		144AC7A71E7F94E700AB4632 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 144AC7A51E7F94E700AB4632 /* LaunchScreen.storyboard */; };
 		144AC7B21E7F94E700AB4632 /* DiscountCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144AC7B11E7F94E700AB4632 /* DiscountCalculatorTests.swift */; };
+		144AC7BD1E7F950B00AB4632 /* CViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144AC7BC1E7F950B00AB4632 /* CViewController.swift */; };
+		144AC7BF1E7F951A00AB4632 /* RViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144AC7BE1E7F951A00AB4632 /* RViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +29,6 @@
 /* Begin PBXFileReference section */
 		144AC7991E7F94E700AB4632 /* DiscountCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiscountCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		144AC79C1E7F94E700AB4632 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		144AC79E1E7F94E700AB4632 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		144AC7A11E7F94E700AB4632 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		144AC7A31E7F94E700AB4632 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		144AC7A61E7F94E700AB4632 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +36,8 @@
 		144AC7AD1E7F94E700AB4632 /* DiscountCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscountCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		144AC7B11E7F94E700AB4632 /* DiscountCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountCalculatorTests.swift; sourceTree = "<group>"; };
 		144AC7B31E7F94E700AB4632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		144AC7BC1E7F950B00AB4632 /* CViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CViewController.swift; sourceTree = "<group>"; };
+		144AC7BE1E7F951A00AB4632 /* RViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +79,9 @@
 		144AC79B1E7F94E700AB4632 /* DiscountCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				144AC7BC1E7F950B00AB4632 /* CViewController.swift */,
+				144AC7BE1E7F951A00AB4632 /* RViewController.swift */,
 				144AC79C1E7F94E700AB4632 /* AppDelegate.swift */,
-				144AC79E1E7F94E700AB4632 /* ViewController.swift */,
 				144AC7A01E7F94E700AB4632 /* Main.storyboard */,
 				144AC7A31E7F94E700AB4632 /* Assets.xcassets */,
 				144AC7A51E7F94E700AB4632 /* LaunchScreen.storyboard */,
@@ -201,7 +204,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				144AC79F1E7F94E700AB4632 /* ViewController.swift in Sources */,
+				144AC7BD1E7F950B00AB4632 /* CViewController.swift in Sources */,
+				144AC7BF1E7F951A00AB4632 /* RViewController.swift in Sources */,
 				144AC79D1E7F94E700AB4632 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +416,7 @@
 				144AC7B81E7F94E700AB4632 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		144AC7B91E7F94E700AB4632 /* Build configuration list for PBXNativeTarget "DiscountCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +425,7 @@
 				144AC7BB1E7F94E700AB4632 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

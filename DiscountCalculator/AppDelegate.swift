@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  DiscountCalculator
 //
-//  Created by Chao Zhang on 3/19/17.
+//  Created by Chao Zhang on 3/10/17.
 //  Copyright © 2017 Chao Zhang. All rights reserved.
 //
 
