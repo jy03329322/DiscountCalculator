@@ -36,32 +36,17 @@ class CViewController: UIViewController,UITextFieldDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        priceTextField.delegate = self
-        dollarsOffTextField.delegate = self
-        discountTextField.delegate = self
-        otherTextField.delegate = self
-        taxTextField.delegate = self
+ 
         let swipeLeft:
         UISwipeGestureRecognizer = UISwipeGestureRecognizer(target:self, action: #selector(handleSwipe))
         swipeLeft.direction = UISwipeGestureRecognizerDirection.left
         view.addGestureRecognizer(swipeLeft)
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-        //MARK: UITextFieldDelegate
-        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-            //Hide the keyboard
-            
-            textField.resignFirstResponder()
-            originalPriceLabel.text = dollarsOffTextField.text
-            return true
-        }
-        //func textFieldDidEndEditing(_ textField: UITextField) {
-            
+
     @IBAction func CalUIButton(_ sender: UIButton) {
     
     
@@ -80,9 +65,23 @@ class CViewController: UIViewController,UITextFieldDelegate
             DiscountPrice = (Tax/100+1)*Price - DollarOff - Price*(Discount/100+OtherDiscount/100)
             originalPriceLabel.text = "Original Price $"+"\(OraginalPrice)"
             discountPriceLabel.text = "Discount Price $"+"\(DiscountPrice)"
+
             
             }
         }
+    
+    @IBAction func hiddenButton(_ sender: Any) {
+        
+        
+        priceTextField.resignFirstResponder()
+        dollarsOffTextField.resignFirstResponder()
+        discountTextField.resignFirstResponder()
+        otherTextField.resignFirstResponder()
+        taxTextField.resignFirstResponder()
+
+    }
+    
+
     @IBAction func CalculateUIButton(_ sender: UIButton) {
     }
         // Dispose of any resources that can be recreated.
